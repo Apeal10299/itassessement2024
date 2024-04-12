@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="Design/main.css">
+</head>
+<script src="Script/script.js"></script>
+<body>
+    <div id="header" style="background-image: url(Image/About.jpg); background-repeat: no-repeat;  background-size: cover;">
+        <ul class="dropbtn icons btn-right showLeft" onclick="showDropdown()" hidden>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container">
+        <label class="title">About Me</label>
+                <div id="myDropdown" class="dropdown-content">
+                    <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Me</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                </div></div><br><br>
+                <div class="container-2">
+
+                    <div class="about-col-2">
+                        <h1 class="sub-title-2">About Me</h1>
+                        <p class="aboutmy">
+                            Welcome to my digital space! I'm Apeal Babu Rokaya, a passionate student based in Kathmandu, Nepal, with a fervent interest in web designing.
+                            As I navigate through my academic journey from The British College, my ultimate goal is to become an IT head, leading innovation and driving 
+                            technological advancements.Whether I'm meticulously crafting user interfaces, diving into coding challenges, or exploring the latest trends 
+                            in digital design, I'm dedicated to honing my skills and expanding my knowledge in the vast realm of IT.Through my website, I invite you to 
+                            join me on this exciting path of growth and discovery. Let's collaborate, learn, and create together as we pave the way for a brighter digital future.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openCity(event, 'Education')">Education</p>
+                            <p class="tab-links" onclick="openCity(event, 'Skills')">Skills</p>
+                            <p class="tab-links" onclick="openCity(event, 'Experience')">Experience</p></div>
+                            <div id="Education" class="tabcontent">
+                                <ul>
+                                    <li><span class="date">2066-2077 BS</span><br>Passed SEE (Class-10) from Salbas Sunrise English School<br>Sarawal-1,Nawalparasi</li>
+                                    <li><span class="date">2077-2079 BS</span><br> Passed SLC (Class-12) from Everest English Secondary Boarding School<br> Sukhanagar,Rupandehi</li>
+                                    <li><span class="date">2080-Now BS</span><br> Studying Bachelor in The British College<br> Thapathali, Kathmandu</li>
+                                </ul>
+                            </div>
+
+                            <div id="Skills" class="tabcontent">
+                                <ul>
+                                    <li><p>Graphic Designer</p></li>
+                                    <li><p>Web Developer</p></li>
+                                    <li><p>Apps Developer</p></li>
+                                </ul>
+                            </div>
+
+                            <div id="Experience" class="tabcontent">
+                                <ul>
+                                    <li><p> In Website designing</p></li>
+                                    <li><p>In Photoshop</p></li>
+                                    <li><p>In Mobile Applications Development</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+        </div>
+        <div class="footer">
+            <footer>&copy; Apeal Babu Rokaya &nbsp;
+                <a href="https://www.facebook.com/apeal.chettri.75" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/rokayaapeal/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/+9779742912541 " target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/apeal-babu-rokaya-50a348298/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/qr/5JDLPJSBQYEBO1 " target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </footer>
+            </div>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+    </script>
+</body>
+</html>
